@@ -1,0 +1,8 @@
+name: HelpfulWafflePlugin
+version: '${project.version}'
+main: com.okawaffles.helpfulwaffleplugin.HelpfulWafflePlugin
+api-version: 1.19
+prefix: HWP
+authors: [ okawaffles ]
+description: helpful commands i want in the game
+website: okawaffles.com
