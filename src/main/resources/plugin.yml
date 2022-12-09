@@ -11,3 +11,7 @@ commands:
     description: "Tell your coordinates to a player or everyone."
     usage: /coords <mode> [player]
     permission: hwp.coords
+  whereis:
+    description: "Get a players coordinates via command."
+    usage: /coords <player>
+    permission: hwp.mod.whereis
