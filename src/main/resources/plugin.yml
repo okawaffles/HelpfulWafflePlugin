@@ -6,3 +6,8 @@ prefix: HWP
 authors: [ okawaffles ]
 description: helpful commands i want in the game
 website: okawaffles.com
+commands:
+  coords:
+    description: "Tell your coordinates to a player or everyone."
+    usage: /coords <mode> [player]
+    permission: hwp.coords
