@@ -15,3 +15,7 @@ commands:
     description: "Get a players coordinates via command."
     usage: /coords <player>
     permission: hwp.mod.whereis
+  lastdeath:
+    description: "Find the coordinates of where you last died."
+    usage: /lastdeath
+    permission: hwp.lastdeath
