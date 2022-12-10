@@ -13,14 +13,14 @@ public class whereis implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!(sender instanceof Player)) return false;
         Player me = (Player) sender;
-        if (args == 0) {
+        if (args.length == 0) {
             sender.sendMessage(ChatColor.RED + "[!] Please supply a player name");
             return false;
         }
 
         Player toGet = (Player) Bukkit.getPlayerExact(args[0]);
-        String plrXYZ = toGet.getLocation().getX() + " / " + toGet.getLocation().getY() + " / " + toGet.getLocation().getZ();
-        me.sendMessage(ChatColor.GOLD + ChatColor.ITALIC + "[~] " + toGet.getDisplayName() + "'s coordinates are: " + plrXYZ);
+        String plrXYZ = Math.round(toGet.getLocation().getX()) + " / " + Math.round(toGet.getLocation().getY()) + " / " + Math.round(toGet.getLocation().getZ());
+        me.sendMessage(ChatColor.GOLD +""+ ChatColor.ITALIC + "[~] " + toGet.getDisplayName() + "'s coordinates are: " + plrXYZ);
         
         return true;
     }
